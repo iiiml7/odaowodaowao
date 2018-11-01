@@ -7,7 +7,7 @@ const util = require('util');
 const client = new Commando.Client({
 	selfbot: true,
 	commandPrefix: '>',
-	owner: '144606974758092801'
+	owner: '357221483291869184'
 });
 
 client
@@ -37,4 +37,4 @@ client.setProvider(
 		.catch(console.error)
 );
 
-client.login(auth.token);
+client.login(process.env.BOT_TOKEN);
